@@ -19,5 +19,5 @@ energy_con_sub$DateTime <- as.POSIXct(paste(energy_con_sub$Date, energy_con_sub$
 plot(energy_con_sub$DateTime,as.numeric(energy_con_sub$Global_active_power),type="l",xlab="",ylab="Global Active Power (kilowatts)") 
 
 #copy Plot to a local .png
-dev.copy(png, file="./eda1/Plot2.png")
+dev.copy(png, file="./eda1/Plot2.png", width=400, height=400)
 dev.off()

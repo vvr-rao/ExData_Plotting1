@@ -25,5 +25,5 @@ legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1",
 
 
 #copy plot to a local .png
-dev.copy(png, file="./eda1/Plot3.png")
+dev.copy(png, file="./eda1/Plot3.png", width=400, height=400)
 dev.off()

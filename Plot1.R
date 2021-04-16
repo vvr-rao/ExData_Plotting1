@@ -19,5 +19,5 @@ hist(as.numeric(energy_con_sub$Global_active_power),col="red",main="Global Activ
 
 
 #copy Plot to a local .png
-dev.copy(png, file="./eda1/Plot1.png")
+dev.copy(png, file="./eda1/Plot1.png", width=400, height=400)
 dev.off()

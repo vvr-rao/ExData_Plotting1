@@ -34,5 +34,5 @@ plot(energy_con_sub$DateTime,as.numeric(energy_con_sub$Global_reactive_power),ty
 
 
 #copy to local
-dev.copy(png, file="./eda1/Plot4.png")
+dev.copy(png, file="./eda1/Plot4.png", width=400, height=400)
 dev.off()
