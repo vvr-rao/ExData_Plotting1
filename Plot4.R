@@ -25,6 +25,7 @@ plot(energy_con_sub$DateTime,as.numeric(energy_con_sub$Global_active_power),type
 plot(energy_con_sub$DateTime,as.numeric(energy_con_sub$Voltage), type="l",xlab="datetime",ylab="Voltage")
 
 plot(energy_con_sub$DateTime,energy_con_sub$Sub_metering_1,type="n",xlab="",ylab="Energy sub metering")
+lines(energy_con_sub$DateTime,as.numeric(energy_con_sub$Sub_metering_1),col="black")
 lines(energy_con_sub$DateTime,as.numeric(energy_con_sub$Sub_metering_2),col="red")
 lines(energy_con_sub$DateTime,as.numeric(energy_con_sub$Sub_metering_3),col="blue")
 legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), cex = 0.6)
